@@ -59,13 +59,18 @@ llm-wiki 的做法不同：让 LLM 主动维护一套结构化的、相互链接
 
 ## 安装
 
-```bash
-# 克隆到 Claude Code 的 skills 目录
-git clone https://github.com/Nemo-cheng/HV-Analysis ~/.claude/skills/hv-analysis
+直接告诉你的 Agent：
 
-# 安装 PDF 转换依赖
-uv pip install weasyprint markdown
 ```
+帮我安装这个 skill：https://github.com/Nemo-cheng/HV-Analysis
+```
+
+支持 Claude Code、Codex、OpenCode 等兼容 Agent Skills 规范的工具。
+
+> **手动安装**（Agent 无法识别上述指令时）：
+> ```bash
+> git clone https://github.com/Nemo-cheng/HV-Analysis ~/.claude/skills/hv-analysis
+> ```
 
 ---
 
