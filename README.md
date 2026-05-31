@@ -67,10 +67,17 @@ llm-wiki 的做法不同：让 LLM 主动维护一套结构化的、相互链接
 
 支持 Claude Code、Codex、OpenCode 等兼容 Agent Skills 规范的工具。
 
-> **手动安装**（Agent 无法识别上述指令时）：
-> ```bash
-> git clone https://github.com/Nemo-cheng/HV-Analysis ~/.claude/skills/hv-analysis
-> ```
+**如果 Agent 无法自动完成安装，用以下命令行方式：**
+
+Codex（Windows PowerShell）：
+```powershell
+python "$env:USERPROFILE\.codex\skills\.system\skill-installer\scripts\install-skill-from-github.py" --url https://github.com/Nemo-cheng/HV-Analysis
+```
+
+Claude Code（手动 git clone）：
+```bash
+git clone https://github.com/Nemo-cheng/HV-Analysis ~/.claude/skills/hv-analysis
+```
 
 ---
 
