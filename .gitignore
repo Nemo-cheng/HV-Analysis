@@ -1,0 +1,9 @@
+# 个人知识库路径配置（每个用户不同，不应提交）
+wiki-config.json
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
